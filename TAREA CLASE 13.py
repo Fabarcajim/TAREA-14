@@ -26,13 +26,13 @@ class General:
 		self.ciudad = StringVar()
 		self.label_ciudad = Label(raiz, text = "Ciudad")
 		self.label_ciudad.grid(column=0, row=0)
-		self.ciudad = Spinbox(raiz, values=Tabla['Ciudad'].tolist(), width=20)
+		self.ciudad = Spinbox(raiz, values=Tabla['Ciudad'].tolist(), width=25)
 		self.ciudad.grid(column=0, row=1)
 
 		self.genero = StringVar()
 		self.genero = Label(raiz, text = "Genero")
 		self.genero.grid(column=0, row=5)
-		self.genero= Spinbox(raiz, values=("M", "F"), width=10)
+		self.genero= Spinbox(raiz, values=("M", "F"), width=15)
 		self.genero.grid(column=0,row=6)
 
 		#Creamos los botones
